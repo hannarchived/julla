@@ -52,7 +52,7 @@ h1{font-family:Nunito,"Varela Round",system-ui,sans-serif;font-weight:900;text-s
 .abt p{margin:0 0 20px;max-width:660px;color:var(--body)}
 .photo{border-radius:36px;padding:10px;line-height:0;justify-self:center;width:100%;max-width:280px;background:linear-gradient(135deg,rgba(255,255,255,.3),rgba(255,255,255,.07) 38%,rgba(255,255,255,.16));backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);box-shadow:inset 2px 2px 3px rgba(255,255,255,.6),inset -2px -3px 7px rgba(150,215,255,.3),inset 0 0 34px rgba(255,255,255,.1),0 24px 54px rgba(0,0,0,.42)}
 .photo::before{inset:10px;border-radius:27px;opacity:1;mix-blend-mode:screen;background:radial-gradient(200px circle at var(--mx,30%) var(--my,20%),rgba(255,255,255,.34),transparent 62%),linear-gradient(118deg,rgba(255,255,255,.34),transparent 26%,transparent 72%,rgba(255,200,225,.2))}
-.photo img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 18%;border-radius:27px;display:block;box-shadow:0 0 0 1px rgba(255,255,255,.3),0 8px 20px rgba(0,0,0,.35)}
+.photo img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 18%;border-radius:23px;display:block;box-shadow:0 0 0 1px rgba(255,255,255,.3),0 8px 20px rgba(0,0,0,.35)}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:36px}
 .card{border-radius:36px;padding:28px 32px;min-height:170px}
 .card h3{margin:0;font-size:1.3rem}.card small{color:var(--pink);letter-spacing:.02em;text-transform:uppercase;font-size:.8rem}
