@@ -72,9 +72,11 @@ draw();
 const hd=document.querySelector("header");
 const onScroll=()=>hd.classList.toggle("scrolled",scrollY>60);
 addEventListener("scroll",onScroll,{passive:true});onScroll();
+
 /* ---------- reveal ---------- */
 const io=new IntersectionObserver(es=>es.forEach(x=>x.isIntersecting&&x.target.classList.add("in")),{threshold:.12});
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+
 /* ---------- nano-particle lily ---------- */
 const cv=document.getElementById("lily"),ctx=cv.getContext("2d"),G=400,img=new Image();
 const NB=28,PAL=Array.from({length:NB},(_,i)=>{const t=i/(NB-1),A=[140,22,82],M=[255,118,172],Z=[255,205,224],[u,v,w]=t<.5?[A,M,t*2]:[M,Z,(t-.5)*2];return"rgb("+u.map((c,j)=>Math.round(c+(v[j]-c)*w)).join(",")+")"});
@@ -103,6 +105,7 @@ addEventListener("pointermove",e=>{const r=cv.getBoundingClientRect(),s=W/r.widt
   document.documentElement.classList.toggle("onlily",!!on)});
 addEventListener("pointerleave",()=>{mouse.x=mouse.y=-999});
 const sm={x:-999,y:-999};
+
 function loop(now){
   const t=(now-t0)/1000,R=W*.17,R2=R*R,base=W/200;
   if(mouse.x<-900){sm.x=sm.y=-999}else if(sm.x<-900){sm.x=mouse.x;sm.y=mouse.y}else{sm.x+=(mouse.x-sm.x)*.2;sm.y+=(mouse.y-sm.y)*.2}
@@ -126,6 +129,7 @@ function loop(now){
     ctx.fill()}
   requestAnimationFrame(loop);
 }
+
 function loopOld(now){
   const t=(now-t0)/1000,R=W*.12,s=Math.max(1.2,W/150);
   ctx.clearRect(0,0,W,W);
