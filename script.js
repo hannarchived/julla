@@ -3,7 +3,7 @@ const RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
 /* ---------- typewriter ---------- */
 (async()=>{
   const a=document.getElementById("ta"),b=document.getElementById("tb"),z=ms=>new Promise(r=>setTimeout(r,ms));
-  const seq=[["hi, it’s ","julla"],["","hanna sandoval"]];
+  const seq=[["hi, i'm ","julla"],["i ","create"],["i ","design"],["i "," build"],["i ","explore"]];
   if(RM){a.textContent=seq[0][0];b.textContent=seq[0][1];return}
   let i=0;
   for(;;){
