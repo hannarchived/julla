@@ -31,7 +31,7 @@ addEventListener("pointermove",e=>{
 /* ---------- kanban ---------- */
 let S=null;try{S=JSON.parse(localStorage.getItem("hs-kanban2"))}catch(e){}
 const EM={todo:"Nothing planned yet.",doing:"Nothing in motion yet — move a card here once you start.",done:"First finished project lands here."};
-if(!S||!S.todo||!S.doing||!S.done)S={todo:[{id:1,c:"PRJ-2026-001",t:"Lily Pad"},{id:2,c:"PRJ-2026-002",t:"Nightfall Notes"}],doing:[],done:[]};
+if(!S||!S.todo||!S.doing||!S.done)S={todo:[{id:2,c:"PRJ-2026-002",t:"Nightfall Notes"}],doing:[{id:1,c:"PRJ-2026-001",t:"bloomline"}],done:[]};
 let nid=Date.now();
 const save=()=>{try{localStorage.setItem("hs-kanban2",JSON.stringify(S))}catch(e){}};
 const kc=[...document.querySelectorAll(".col")],keys=kc.map(c=>c.dataset.k);
