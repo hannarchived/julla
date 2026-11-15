@@ -127,3 +127,10 @@ nav a:hover{color:#ffd3e3;transform:translateY(-1px);text-shadow:0 0 6px rgba(25
 .xp li{position:relative;padding-left:28px;margin:0 0 11px;font-size:.95rem;color:var(--body);max-width:860px}
 .xp li::before{content:"→";position:absolute;left:0;color:var(--pink)}
 .xp .tl{margin-top:16px}
+
+/* project links */
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.gh{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.07);color:#fff;text-decoration:none;font-size:.85rem;transition:color .25s,border-color .25s,box-shadow .25s,transform .25s}
+.gh svg{width:18px;height:18px;fill:currentColor}
+.gh:hover{color:#ffd3e3;border-color:rgba(255,160,200,.7);box-shadow:0 0 18px rgba(255,130,180,.35);transform:translateY(-2px)}
+.gh.off{opacity:.5;pointer-events:none}
